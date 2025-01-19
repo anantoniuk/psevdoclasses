@@ -1,0 +1,74 @@
+/*Кнопка на яку навели курсор*/
+button:hover {
+  cursor: pointer;
+  background-color: #3c5abd;
+  color: white;
+}
+/*Відвідані посилання*/
+a:visited {
+  color: rgb(88, 88, 88);
+}
+/* Активне посилання */
+a:active {
+  color: #3c5abd;
+}
+/* Кнопки в фокусі */
+button:focus {
+  background-color: #bd3cbd;
+  color: white;
+  border: 0;
+  outline: 0;
+}
+/* Інпут в фокусі */
+input:focus {
+  background-color: rgb(65, 65, 65);
+  color: white;
+  border: 0;
+  outline: 0;
+}
+/* Інпут дізайьле */
+input:disabled {
+  border-color: rgb(255, 0, 51);
+}
+.flag {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #3c5abd;
+}
+.flag:checked {
+  background-color: black;
+}
+.list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-size: 24px;
+}
+.list-item {
+  padding: 10px;
+  order: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+/* парні елементи */
+/* .list-item:nth-child(even) {
+  background-color: orange;
+} */
+/* не парні елементи */
+/* .list-item:nth-child(odd) {
+  background-color: orange;
+} */
+/* всі до 5 */
+/* .list-item:nth-child(-n + 5) {
+  background-color: orange;
+} */
+/* останій елемент */
+.list-item:last-child {
+  background-color: orange;
+}
+/* всі окрім останього */
+.list-item:not(:last-child) {
+  background-color: rgb(253, 255, 122);
+}
